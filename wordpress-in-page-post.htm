@@ -1,0 +1,19 @@
+<!--  Add what you see below to a post or page
+      the link to the image should be the link to the image
+      either on your Wordpress or server. IMPORTANT: remove all blank lines in the JavaScript! -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css" />
+<div id="panorama" style="width:600;height:400px;border:3px solid black;"></div>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+<script>
+  window.onload = function() {
+    const author = "Per Thykjaer Jensen"
+    const img = "R0010030.JPG";
+    pannellum.viewer('panorama', {
+      "type": "equirectangular",
+      "panorama": img,
+      "title": "The Old Town - dec. 17th. 2021, Aarhus",
+      "author": author,
+      "autoLoad": true
+    });
+  } // document ready
+</script>
